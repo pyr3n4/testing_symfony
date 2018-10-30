@@ -10,7 +10,7 @@ class ProductControllerTest extends WebTestCase
     {
         $client = static::createClient();
 
-        $client->request('GET', '/product/');
+        $client->request('GET', '/product/');  //en el ejercicio guiado la uri: /product/new
 
         $this->assertEquals(500, $client->getResponse()->getStatusCode());
     }
