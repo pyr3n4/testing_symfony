@@ -12,6 +12,6 @@ class ProductControllerTest extends WebTestCase
 
         $client->request('GET', '/product/');
 
-        $this->assertEquals(500, $client->getResponse()->getStatusCode());
+        $this->assertEquals(301, $client->getResponse()->getStatusCode());
     }
 }
